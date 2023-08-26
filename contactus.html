@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mainbox">
+        <header>
+            <img class="logo-resp" src="images/rs new.png" alt="">
+            <nav class="nav h-nav-resp">
+
+
+                <div class="left v-class-resp">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="our products.html">OUR PRODUCTS</a></li>
+                    </ul>
+                </div>
+
+                <div class="middle v-class-resp">
+                    <img src="images/rs new.png" alt="">
+                    <!-- <div>RS granites</div> -->
+                </div>
+
+                <div class="right v-class-resp">
+                    <ul>
+                        <li><a href="about us.html">ABOUT US</a></li>
+                        <li><a href="contactus.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+
+        </header>
+        <div class="contactus-box1">
+            <div class="contactus-box1-h">
+                <h2 id="contactus-box1h2">CONTACT US</h2>
+                <h2 class="contactus-box1h2">If any question or need information? Anytime call us</h2>
+            </div>
+
+        </div>
+        <div  class="contact-head">
+            <h1>Quick Contact Details</h2>
+        </div>
+        <div class="contactus-box2">
+            <div><strong>Email:</strong> srimanrao180@gmail.com</div>
+            <div><strong>Phone:</strong> 9398044979, 9948987084</div>
+            <div><strong>website:</strong><a href="www.facebook.com">www.facebook.com</a></div>
+            <div><strong>Timings :</strong>24hrs available</div>
+        </div>
+
+        <div class="visiting-card">
+            <img src="images/visiting card.jpeg" alt="">
+        </div>
+
+
+        <div class="google-maps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15176.702644559535!2d79.54426672966068!3d18.017049633359463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334f6478fc61f7%3A0xc4053775469afbc5!2sNaim%20Nagar%2C%20Hanamkonda%2C%20Telangana%20506009!5e0!3m2!1sen!2sin!4v1689327956629!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <footer>
+            <div class="footertop">
+                <div class="footerlogo">
+                    <img src="images/rs new.png" alt="">
+                </div>
+                <div class="sociallinks">
+
+                    <a href=""><img src="images/instagram.svg" alt=""></a>
+                    <a href=""><img src="images/youtube.svg" alt=""></a>
+                    <a href=""><img src="images/linkedin.svg" alt=""></a>
+                    <a href=""><img src="images/twitter.svg" alt=""></a>
+
+                </div>
+            </div>
+
+            <div class="footermiddle">
+                <div class="address"><strong>address:</strong> RS Granites <br> Plot No.81 & 82, IDA Rampur,<br>
+                    HANUMAKONDA
+                    - 506 142. (T.S.)</div>
+
+
+            </div>
+
+            <div class="footerbottom">
+                <span>
+                    © RS Granites 2023,All rights reserved.
+                </span>
+            </div>
+        </footer>
+    </div>
+
+        <script>
+            // Get the navigation element
+            var nav = document.getElementById('nav');
+
+            // Add scroll event listener
+            window.addEventListener('scroll', function () {
+                // Check if the page has been scrolled
+                if (window.scrollY > 0) {
+                    // Add the 'scrolled' class to the navigation element
+                    nav.classList.add('scrolled');
+                } else {
+                    // Remove the 'scrolled' class from the navigation element
+                    nav.classList.remove('scrolled');
+                }
+            });
+
+            hamburger = document.querySelector('.hamburger')
+            nav = document.querySelector('.nav')
+            left = document.querySelector('.left')
+            // middle = document.querySelector('.middle')
+            right = document.querySelector('.right')
+
+
+            hamburger.addEventListener('click', () => {
+                nav.classList.toggle('h-nav-resp')
+                left.classList.toggle('v-class-resp')
+                // middle.classList.toggle('v-class-resp')
+                right.classList.toggle('v-class-resp')
+            })
+
+        </script>
+    
+</body>
+
+</html>

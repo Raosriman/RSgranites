@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <header>
+        <img class="logo-resp" src="images/rs new.png" alt="">
+        <nav class="nav h-nav-resp" >
+            
+
+            <div class="left v-class-resp">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="our products.html">OUR PRODUCTS</a></li>
+                </ul>
+            </div>
+
+            <div class="middle v-class-resp">
+                <img src="images/rs new.png" alt="">
+                <!-- <div>RS granites</div> -->
+            </div>
+
+            <div class="right v-class-resp">
+                <ul>
+                    <li><a href="about us.html">ABOUT US</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="box1">
+        <div class="h-box1">
+        <h2 class="h2-1box1">Welcome to RS granites </h2>
+        <h2 class="h2-2box1">Your Trusted Source <br>for Quality Granite Products</h2>
+    </div>
+    </div>
+    <div class="box2">
+
+        <div class="box2-2">
+            <p>At RS Granites, <br>we specialize in providing exquisite granite products that enhance the beauty and
+                functionality of any space. With years of industry experience, we have established ourselves as a
+                leading
+                supplier of top-quality granite stones for both residential and commercial projects.</p>
+            <div class="btn1box2"><a href="about us.html">More aboutus</a></div>
+
+
+        </div>
+        <div class="imgbox2">
+            <img src="images/home-1.jpg" alt="">
+        </div>
+
+    </div>
+    <div class="box3">
+
+        <section class="gallery">
+            <article class="card">
+                <figure>
+                    <img src="images/home background.jpg" alt="1" title="1">
+                </figure>
+            </article>
+            <article class="card">
+                <figure>
+                    <img src="images/home background1.jpg" alt="1" title="1">
+                </figure>
+            </article>
+            <article class="card">
+                <figure>
+                    <img src="images/home-2.jpg" alt="1" title="1">
+                </figure>
+            </article>
+            <article class="card">
+                <figure>
+                    <img src="images/home bg3.jpg" alt="1" title="1">
+                </figure>
+            </article>
+        </section>
+    </div>
+
+    <div class="box4">
+        <div class="left-box4">Why Choose Granite?</div>
+        <div class="right-box4">
+            <p>Granite is an exceptional natural stone that offers unparalleled durability, timeless
+                elegance, and remarkable versatility. Whether you're looking for kitchen countertops, bathroom vanities,
+                flooring, or outdoor features, granite is the perfect choice.</p>
+        </div>
+    </div>
+
+    <div class="box5">
+        <h2 class="h2box5">where to use ?</h2>
+        <div id="imgbox5">
+            <div class="imgbox5"><img src="images/home-wtu-1.jpg" alt=""></div>
+            
+            <div class="imgbox5"><img src="images/home-wtu-2.jpg" alt=""></div>
+            <div class="imgbox5"><img src="images/home-wtu-3.jpeg" alt=""></div>
+        </div>
+        <div class="btn2box5"><a href="our products.html">more about our products</a></div>
+    </div>
+
+
+    <footer>
+        <div class="footertop">
+            <div class="footerlogo">
+                <img src="images/rs new.png" alt="">
+            </div>
+            <div class="sociallinks">
+
+                <a href=""><img src="images/instagram.svg" alt=""></a>
+                <a href=""><img src="images/youtube.svg" alt=""></a>
+                <a href=""><img src="images/linkedin.svg" alt=""></a>
+                <a href=""><img src="images/twitter.svg" alt=""></a>
+
+            </div>
+        </div>
+
+        <div class="footermiddle">
+            <div class="address"><strong>address:</strong> RS Granites <br> Plot No.81 & 82, IDA Rampur,<br> HANUMAKONDA
+                - 506 142. (T.S.)</div>
+
+
+        </div>
+
+        <div class="footerbottom">
+            <span>
+                © RS Granites 2023,All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <script>
+        // Get the navigation element
+        var nav = document.getElementById('nav');
+
+        // Add scroll event listener
+        window.addEventListener('scroll', function () {
+            // Check if the page has been scrolled
+            if (window.scrollY > 0) {
+                // Add the 'scrolled' class to the navigation element
+                nav.classList.add('scrolled');
+            } else {
+                // Remove the 'scrolled' class from the navigation element
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        hamburger = document.querySelector('.hamburger')
+        nav = document.querySelector('.nav')
+        left = document.querySelector('.left')
+        // middle = document.querySelector('.middle')
+        right = document.querySelector('.right')
+
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('h-nav-resp')
+            left.classList.toggle('v-class-resp')
+            // middle.classList.toggle('v-class-resp')
+            right.classList.toggle('v-class-resp')
+        })
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

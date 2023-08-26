@@ -1,0 +1,126 @@
+.contactus-box1 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-image: url(images/contact\ us2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    width: 100vw;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+.mainbox{
+    margin: 0 1px;
+    overflow-x: hidden;
+
+}
+
+#contactus-box1h2 {
+   
+    color: rgb(51, 12, 178);
+    text-align: center;
+    font-size: 5vw;
+    font-style: inherit;
+}
+
+.contactus-box1h2 {
+   
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contactus-box1-h{
+    position: relative;
+    top: 240px;
+    margin: 5px;
+
+}
+
+
+
+.google-maps {
+    
+   
+    position: relative;
+}
+
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.contactus-box2 {
+    margin: 5vw;
+    width: 100vw;
+}
+.contact-head{
+    text-align: center;
+}
+
+.contactus-box2 div{
+display: flex;
+flex-direction: column;
+    padding: 0.4vw;
+    font-size: 1.3vw;
+}
+
+.visiting-card img {
+    position: relative;
+    left: 600px;
+    bottom: 140px;
+    border: 2px solid black;
+    border-radius: 30px;
+    box-shadow: 6px 4px 13px 5px black;
+    height: 245px;
+    width: 430px;
+
+}
+
+
+
+@media only screen and (max-width:767px){
+    .visiting-card img{
+        position: static;
+        height: 100%;
+        width: 95%;
+        margin-left: 5px;
+    }
+    .contactus-box2{
+        display: flex;
+        flex-direction: column;
+        padding: 0.4vw;
+        gap: 5px;
+           flex-wrap: wrap;
+        }
+        .contactus-box2 div{
+            font-size: 2vh;
+        }
+}
+@media screen and (min-width:767px) and (max-width:1023px){
+    .contactus-box2 div {
+        font-size:30px;
+    }
+    .visiting-card img{
+        position: static;
+        height: 100%;
+        width: 95%;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .contactus-box1{
+        width: 100vw;
+    }
+
+}
